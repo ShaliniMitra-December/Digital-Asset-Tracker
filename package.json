@@ -1,0 +1,12 @@
+{
+  "name": "digital-asset-tracker",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm --prefix client run dev",
+    "server": "node server/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
